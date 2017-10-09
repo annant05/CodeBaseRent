@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_use_light"
+    tools:context="com.developer.annant.gridlayout.SignUp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layoutContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/relative_top_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="Logo"
+                        android:padding="13dp"
+                        android:src="@mipmap/ic_rento"
+
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imageview_logo"
+                        android:text="Sign Up "
+                        android:textAlignment="center"
+                        android:textColor="#020202"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_top_logo"
+                    android:layout_marginTop="26dp">
+
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_alignStart="@+id/edittext_name"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_account_box_black_36px" />
+
+                    <EditText
+                        android:id="@+id/edittext_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="54dp"
+                        android:hint="Name"
+                        android:paddingLeft="40dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_name"
+                    android:layout_marginTop="26dp">
+
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+
+                        android:layout_alignStart="@+id/edittext_mobile"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_phone_black_36px" />
+
+                    <EditText
+                        android:id="@+id/edittext_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="54dp"
+                        android:hint="Mobile "
+                        android:paddingLeft="40dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_mobile"
+                    android:layout_marginTop="26dp">
+
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+
+                        android:layout_alignStart="@+id/edittext_email"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_email_black_36px" />
+
+                    <EditText
+                        android:id="@+id/edittext_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="54dp"
+                        android:hint="Email"
+                        android:paddingLeft="40dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relative_email"
+                    android:layout_marginTop="26dp">
+
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="30dp"
+                        android:layout_alignLeft="@+id/edittext_password"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/edittext_password"
+                        android:src="@drawable/ic_lock_black_36px" />
+
+                    <EditText
+                        android:id="@+id/edittext_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="54dp"
+                        android:hint="Password"
+                        android:paddingLeft="40dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_radiobuttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_password"
+                    android:layout_marginTop="16dp">
+
+                    <!--TextView
+
+                        android:id="@+id/radio_rel_occup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Occupation :"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:layout_alignParentStart="true"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:textStyle="bold" /-->
+
+
+                    <RadioButton
+                        android:id="@+id/rda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/ref_space"
+                        android:layout_marginEnd="16dp"
+                        android:text="Student"
+                        android:textSize="16sp" />
+
+                    <android.support.v4.widget.Space
+                        android:id="@+id/ref_space"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <RadioButton
+                        android:id="@+id/rdb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/ref_space"
+                        android:text="Professional"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_login_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/relative_radiobuttons"
+                    android:paddingBottom="12dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview_signup"
+                        android:layout_width="154dp"
+                        android:layout_height="54dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/blue_new"
+                        android:clickable="true"
+                        android:stateListAnimator="@animator/lift_on_touch"
+                        app:cardBackgroundColor="@color/red_use_light"
+                        app:cardCornerRadius="28dp"
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Sign Up"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+
+                            />
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

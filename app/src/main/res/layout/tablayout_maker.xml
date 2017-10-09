@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.developer.annant.gridlayout.MainActivity"
+    tools:showIn="@layout/nav_layout_maker">
+
+
+    <!--    android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+   -->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_viewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="8dp"
+        app:tabBackground="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/red_use"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        tools:ignore="UnusedAttribute" />
+    <!--
+    android:layout_below="@+id/tabs_viewid"
+    android:layout_above="@+id/view_pagerid"
+   />
+-->
+            <android.support.v4.view.ViewPager
+                android:layout_below="@+id/tabs_viewid"
+                android:id="@+id/view_pagerid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                 />
+     <!-- android:layout_centerHorizontal="true" -->
+</RelativeLayout>

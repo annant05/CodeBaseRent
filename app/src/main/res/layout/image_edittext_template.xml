@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/relative_top_logo"
+    android:layout_marginTop="26dp">
+
+
+    <ImageView
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/ic_account_box_black_36px"
+        android:layout_alignBottom="@+id/edittext_name"
+        android:layout_alignStart="@+id/edittext_name"
+        android:layout_marginBottom="7dp" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:hint="Name"
+        android:paddingLeft="40dp" />
+
+</RelativeLayout>

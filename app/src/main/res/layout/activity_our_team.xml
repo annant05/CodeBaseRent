@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_ourteam"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:stateListAnimator="@animator/lift_on_touch"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--  <ImageView
+                      android:padding="10dp"
+                      android:id="@+id/img"
+                      android:src="@drawable/owner3"
+                      android:maxWidth="100dp"
+                      android:layout_gravity="center"
+                      android:layout_width="120dp"
+                      android:layout_height="120dp" />-->
+                <!--  <de.hdodenhof.circleimageview.CircleImageView
+                      android:id="@+id/image_iconid"
+                      android:layout_width="120dp"
+                      android:layout_height="120dp"
+                      android:layout_gravity="center"
+                      android:layout_margin="10dp"
+                      android:padding="10dp"
+
+                      android:src="@drawable/owner3"
+                      android:textSize="15dp"
+
+                      app:civ_border_color="#a9a9a9"
+                      app:civ_border_width="1dp"
+                      app:civ_fill_color="#FFF" />
+              -->
+
+                <ProgressBar
+                    android:id="@+id/pbar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img"
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_rento" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dikshant "
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Co-Founder"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Rentoversity</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_invite">Invite Friends</string>
+    <string name="action_contact_us">Contact Us</string>
+    <string name="action_legal">Legal</string>
+    <string name="action_ourteam">Our Team</string>
+    <string name="navigation_home">Home</string>
+    <string name="navstring_home">Home</string>
+    <string name="navstring_wishwall">Wish Wall</string>
+    <string name="navstring_rumblewall">Rumble Wall</string>
+    <string name="navstring_mylist">My List</string>
+    <string name="action_search">Search</string>
+    <string name="navigation_drawer_open">Open navigation drawer </string>
+    <string name="navigation_drawer_close">Close navigation drawer </string>
+    <string name="action_chat">Chat</string>
+    <string name="title_activity_register_new_user">RegisterNewUser</string>
+    <string name="termandcondi">I accept the terms and conditions.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

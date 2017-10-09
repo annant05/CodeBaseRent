@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef5350</color>
+    <color name="colorPrimaryDark">#DC3226</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--Custom Colors by me -->
+    <color name="white">#FFFFFF</color>
+    <color name="backgreylight">#d7ccc8</color>
+    <color name="red_use">#DC3226</color>
+    <color name="color_3dotmeu">#000000</color>
+    <color name="red_use_light">#ef5350</color>
+    <color name="button_colour">#DC3226</color>
+    <color name="blue_new">#64b5f6</color>
+
+
+</resources>

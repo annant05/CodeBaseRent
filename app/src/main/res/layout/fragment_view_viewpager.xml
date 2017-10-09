@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coord_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- A RecyclerView with some commonly used attributes -->
+
+        <ImageView
+            android:id="@+id/slider_image_test"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Slider_Implement Here "
+            android:src="@drawable/use_dev" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_container_one"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slider_image_test"
+            android:layout_margin="4dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:text="Top Searches "
+                    android:textAlignment="center"
+                    android:textColor="#060606"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/my_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_container_two"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@+id/card_container_one"
+            android:layout_margin="4dp"
+            app:cardElevation="2dp">
+
+            <!--android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view_below"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                /-->
+
+
+                <GridView
+                    android:id="@+id/gridview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:columnWidth="130dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="2dp"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
